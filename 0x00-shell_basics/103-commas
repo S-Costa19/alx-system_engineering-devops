@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -pmax
+printf "%s\n" .[!.]* [[:digit:][:alpha:]]*/ | awk '{printf("%s,",$0)} END {print ""}'
+
